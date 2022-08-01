@@ -1,0 +1,67 @@
+
+.h1{
+
+    margin: auto;
+    font-size: 18px;
+    font-family: Arial, cursive;
+    color: #073B4C;
+}
+body{
+    background: #7F7FD5; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: Arial, cursive;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card{
+    height: 200px;
+    width: 200px;
+    color: #086375;
+    border: 2px solid #AEC5EB;
+    border-radius: 10px;
+    margin: 5px;
+    transition: all 0.5s linear;
+    transform-style: preserve-3d;
+}
+
+
+.card-front, .card-back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: #AEC5EB;
+    font-family: 'Roboto Slab', serif;
+    height: 100%;
+    width: 100%;
+
+}
+
+.card-front{
+    z-index: 2;
+    backface-visibility: hidden;
+}
+.card-back{
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+
+    .card:hover {
+    transform: rotateY(180deg);
+}
+.flex-container{
+    width: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+
+}
+
+
+
